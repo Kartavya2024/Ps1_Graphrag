@@ -1,0 +1,55 @@
+Quick-Start Guide
+1. Install (Python 3.9+):
+
+bash
+
+pip install openai sentence-transformers networkx numpy pyvis matplotlib
+2. Set your key (from Z.ai console → API Keys):
+
+bash
+
+export ZAI_API_KEY="your-key"        # Windows: set ZAI_API_KEY=your-key
+3. Run:
+
+bash
+
+python graphrag_demo.py
+First run: downloads the embedding model (~90 MB), makes ~45 GLM calls (a couple of minutes), prints the benchmark, saves all artifacts. Every re-run is instant and free (cached).
+
+Commands
+Command
+What it does
+python graphrag_demo.py	Full run: benchmark + chart + graph HTML
+... ask "question"	Ask anything; shows vector vs graph vs hybrid answers + the graph facts used
+... ingest file.pdf	Use YOUR document (.txt/.md/.pdf/.docx) — auto chunks, rebuilds graph
+... viz --query "..."	Graph HTML with the traversal path colored red/orange
+... eval / ... build / ... reset	Benchmark only / force rebuild / back to demo corpus
+
+Using Your Own Document
+bash
+
+python graphrag_demo.py ingest my_report.pdf
+VECTOR_K=3 python graphrag_demo.py ask "Who founded the company?"
+Optional custom benchmark — create questions.json in the same folder:
+
+json
+
+[
+  {"question": "Who founded the company?", "gold": "Jane Smith", "category": "factoid"},
+  {"question": "Which university did the founder attend?", "gold": "MIT", "category": "multi-hop"}
+]
+Then python graphrag_demo.py eval uses it automatically.
+
+Presentation Demo Flow (2 minutes)
+python graphrag_demo.py ask "Who is the CEO of the company that acquired DataFlow Systems?" → vector says Unknown, graph says Marcus Webb with the visible fact chain
+Open knowledge_graph.html → show the entities and relations
+Show results.png → multi-hop column is your headline result
+Troubleshooting
+Problem
+Fix
+Smoke test fails at startup	Wrong model id → export LLM_MODEL=glm-4.5-flash; China mainland → export LLM_BASE_URL=https://open.bigmodel.cn/api/paas/v4/
+HuggingFace download fails	export HF_ENDPOINT=https://hf-mirror.com
+Junk entity nodes in graph	Add to ALIASES/GENERIC_NODES, delete kg.json + llm_cache.json, rerun
+Rate-limit warnings	Normal on free tier — the code retries automatically, just let it run
+Baseline passes a multi-hop Q	export VECTOR_K=1 (default) — or present it honestly as partial recovery
+Slow/verbose answers	Thinking mode is disabled by default; if your endpoint rejects that flag, the code auto-drops it

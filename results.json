@@ -1,0 +1,149 @@
+[
+  {
+    "n": 1,
+    "category": "factoid",
+    "question": "What is the flagship product of DataFlow Systems?",
+    "expected": "InsightBoard",
+    "vector": {
+      "answer": "InsightBoard",
+      "correct": true
+    },
+    "graph": {
+      "answer": "InsightBoard",
+      "correct": true
+    },
+    "hybrid": {
+      "answer": "InsightBoard",
+      "correct": true
+    }
+  },
+  {
+    "n": 2,
+    "category": "factoid",
+    "question": "Where is CloudNine Technologies headquartered?",
+    "expected": "Munich",
+    "vector": {
+      "answer": "Munich",
+      "correct": true
+    },
+    "graph": {
+      "answer": "",
+      "correct": false
+    },
+    "hybrid": {
+      "answer": "Munich",
+      "correct": true
+    }
+  },
+  {
+    "n": 3,
+    "category": "multi-hop",
+    "question": "Who is the CEO of the company that acquired DataFlow Systems?",
+    "expected": "Marcus Webb",
+    "vector": {
+      "answer": "Unknown",
+      "correct": false
+    },
+    "graph": {
+      "answer": "Marcus Webb",
+      "correct": true
+    },
+    "hybrid": {
+      "answer": "Marcus Webb",
+      "correct": true
+    }
+  },
+  {
+    "n": 4,
+    "category": "multi-hop",
+    "question": "Which university did the founder of Speedy Labs attend?",
+    "expected": "Indian Institute of Technology",
+    "vector": {
+      "answer": "Unknown",
+      "correct": false
+    },
+    "graph": {
+      "answer": "Indian Institute of Technology",
+      "correct": true
+    },
+    "hybrid": {
+      "answer": "Indian Institute of Technology",
+      "correct": true
+    }
+  },
+  {
+    "n": 5,
+    "category": "multi-hop",
+    "question": "What company did the head of engineering of DataFlow Systems previously work at?",
+    "expected": "NetSphere",
+    "vector": {
+      "answer": "",
+      "correct": false
+    },
+    "graph": {
+      "answer": "",
+      "correct": false
+    },
+    "hybrid": {
+      "answer": "",
+      "correct": false
+    }
+  },
+  {
+    "n": 6,
+    "category": "multi-hop",
+    "question": "Who invested in the startup whose CEO won the German Startup Award?",
+    "expected": "Hans Muller",
+    "vector": {
+      "answer": "Unknown",
+      "correct": false
+    },
+    "graph": {
+      "answer": "Hans Muller",
+      "correct": true
+    },
+    "hybrid": {
+      "answer": "Hans Muller",
+      "correct": true
+    }
+  },
+  {
+    "n": 7,
+    "category": "aggregation",
+    "question": "Which companies has CloudNine Technologies acquired?",
+    "expected": [
+      "DataFlow",
+      "NetSphere"
+    ],
+    "vector": {
+      "answer": "DataFlow Systems and NetSphere",
+      "correct": true
+    },
+    "graph": {
+      "answer": "DataFlow Systems and NetSphere",
+      "correct": true
+    },
+    "hybrid": {
+      "answer": "DataFlow Systems and NetSphere",
+      "correct": true
+    }
+  },
+  {
+    "n": 8,
+    "category": "unanswerable",
+    "question": "Who is the CFO of CloudNine Technologies?",
+    "expected": "Unknown",
+    "vector": {
+      "answer": "Unknown",
+      "correct": true
+    },
+    "graph": {
+      "answer": "Unknown",
+      "correct": true
+    },
+    "hybrid": {
+      "answer": "Unknown",
+      "correct": true
+    }
+  }
+]

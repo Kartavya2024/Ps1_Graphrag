@@ -1,0 +1,9 @@
+n,category,question,expected,vector_answer,vector_ok,graph_answer,graph_ok,hybrid_answer,hybrid_ok
+1,factoid,What is the flagship product of DataFlow Systems?,InsightBoard,InsightBoard,True,InsightBoard,True,InsightBoard,True
+2,factoid,Where is CloudNine Technologies headquartered?,Munich,Munich,True,,False,Munich,True
+3,multi-hop,Who is the CEO of the company that acquired DataFlow Systems?,Marcus Webb,Unknown,False,Marcus Webb,True,Marcus Webb,True
+4,multi-hop,Which university did the founder of Speedy Labs attend?,Indian Institute of Technology,Unknown,False,Indian Institute of Technology,True,Indian Institute of Technology,True
+5,multi-hop,What company did the head of engineering of DataFlow Systems previously work at?,NetSphere,,False,,False,,False
+6,multi-hop,Who invested in the startup whose CEO won the German Startup Award?,Hans Muller,Unknown,False,Hans Muller,True,Hans Muller,True
+7,aggregation,Which companies has CloudNine Technologies acquired?,"['DataFlow', 'NetSphere']",DataFlow Systems and NetSphere,True,DataFlow Systems and NetSphere,True,DataFlow Systems and NetSphere,True
+8,unanswerable,Who is the CFO of CloudNine Technologies?,Unknown,Unknown,True,Unknown,True,Unknown,True

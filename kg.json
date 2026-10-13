@@ -1,0 +1,174 @@
+{
+ "doc_hash": "7bb562ebdbb7",
+ "edges": [
+  [
+   "Alice Chen",
+   "DataFlow Systems",
+   [
+    "founded"
+   ]
+  ],
+  [
+   "DataFlow Systems",
+   "Berlin",
+   [
+    "headquartered_in"
+   ]
+  ],
+  [
+   "DataFlow Systems",
+   "CloudNine Technologies",
+   [
+    "acquired_by"
+   ]
+  ],
+  [
+   "DataFlow Systems",
+   "InsightBoard",
+   [
+    "product_of"
+   ]
+  ],
+  [
+   "CloudNine Technologies",
+   "Munich",
+   [
+    "based_in"
+   ]
+  ],
+  [
+   "CloudNine Technologies",
+   "DataFlow Systems",
+   [
+    "acquired"
+   ]
+  ],
+  [
+   "CloudNine Technologies",
+   "NetSphere",
+   [
+    "acquired"
+   ]
+  ],
+  [
+   "Marcus Webb",
+   "CloudNine Technologies",
+   [
+    "ceo_of"
+   ]
+  ],
+  [
+   "Marcus Webb",
+   "Speedy Labs",
+   [
+    "worked_at"
+   ]
+  ],
+  [
+   "Speedy Labs",
+   "Bangalore",
+   [
+    "headquartered_in"
+   ]
+  ],
+  [
+   "Priya Sharma",
+   "Speedy Labs",
+   [
+    "founded"
+   ]
+  ],
+  [
+   "Priya Sharma",
+   "Bangalore",
+   [
+    "based_in"
+   ]
+  ],
+  [
+   "Priya Sharma",
+   "Indian Institute of Technology",
+   [
+    "studied_at"
+   ]
+  ],
+  [
+   "Tom Becker",
+   "DataFlow Systems",
+   [
+    "head_of_engineering_of"
+   ]
+  ],
+  [
+   "Tom Becker",
+   "NetSphere",
+   [
+    "worked_at"
+   ]
+  ],
+  [
+   "NetSphere",
+   "Hamburg",
+   [
+    "headquartered_in"
+   ]
+  ],
+  [
+   "NetSphere",
+   "FastRoute",
+   [
+    "product_of"
+   ]
+  ],
+  [
+   "Hans Muller",
+   "NetSphere",
+   [
+    "founded"
+   ]
+  ],
+  [
+   "Hans Muller",
+   "GreenLeaf",
+   [
+    "invested_in"
+   ]
+  ],
+  [
+   "GreenLeaf",
+   "Stuttgart",
+   [
+    "based_in"
+   ]
+  ],
+  [
+   "GreenLeaf",
+   "CropSense",
+   [
+    "product_of"
+   ]
+  ],
+  [
+   "Lena Fischer",
+   "GreenLeaf",
+   [
+    "ceo_of",
+    "joined"
+   ]
+  ],
+  [
+   "Lena Fischer",
+   "German Startup Award",
+   [
+    "won"
+   ]
+  ],
+  [
+   "Lena Fischer",
+   "Stuttgart University",
+   [
+    "taught_at"
+   ]
+  ]
+ ]
+}
